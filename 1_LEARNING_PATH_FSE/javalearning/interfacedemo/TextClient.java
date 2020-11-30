@@ -14,5 +14,8 @@ public class TextClient {
 		a.foo();
 		a.bar();
 		c.foobar();
+		C clone = ((X)c).clone();
+		if (clone != c)
+			System.out.println("Clone created");
 	}
 }
