@@ -1,0 +1,9 @@
+package com.rohith.spring.springcore.set;
+
+public class Test {
+
+	public static void main(String[] args) {
+		ClassPathXmlApplicationContext = new ClassPathXmlApplicationContext("com/rohith/spring/springcore/set/setconfig.xml");
+	}
+
+}

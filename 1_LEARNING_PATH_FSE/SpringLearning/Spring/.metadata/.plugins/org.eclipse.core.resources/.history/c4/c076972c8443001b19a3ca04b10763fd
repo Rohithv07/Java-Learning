@@ -1,0 +1,6 @@
+package com.rohith.spring.springcore.map;
+
+public class Customer {
+	private int id;
+	private Map<Integer, String> product;
+}

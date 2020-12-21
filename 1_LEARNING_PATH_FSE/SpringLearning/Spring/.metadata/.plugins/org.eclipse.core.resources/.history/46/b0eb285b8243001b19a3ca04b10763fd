@@ -1,0 +1,14 @@
+package com.rohith.spring.springcore.list;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Test {
+
+	public static void main(String[] args) {
+		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext(
+				"com/rohith/spring/springcore/list/listconfig.xml");
+		Hospital hospital = (Hospital) ctx.getBean("hospital");
+		System.out.println(hospital.getName());
+	}
+
+}

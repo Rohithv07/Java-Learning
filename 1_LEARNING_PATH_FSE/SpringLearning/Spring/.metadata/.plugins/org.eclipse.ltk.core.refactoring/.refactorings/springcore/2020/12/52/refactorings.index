@@ -1,0 +1,26 @@
+1608548980210	Delete element
+1608549234584	Encapsulate field 'id'
+1608549240752	Encapsulate field 'name'
+1608549255612	Delete element
+1608550906538	Encapsulate field 'name'
+1608550910889	Encapsulate field 'departments'
+1608550942571	Copy file
+1608550954565	Rename resource 'config.xml'
+1608551526411	Copy file
+1608551569544	Encapsulate field 'name'
+1608551572603	Encapsulate field 'models'
+1608551599278	Rename resource 'config.xml'
+1608552048557	Encapsulate field 'id'
+1608552052038	Encapsulate field 'product'
+1608552062018	Copy file
+1608552067442	Rename resource 'config.xml'
+1608553099287	Encapsulate field 'countryAndLangs'
+1608553121009	Copy file
+1608553127859	Copy compilation unit
+1608553138590	Rename resource 'mapconfig.xml'
+1608553512727	Encapsulate field 'maths'
+1608553516003	Encapsulate field 'phy'
+1608553519797	Encapsulate field 'chem'
+1608553790974	Encapsulate field 'scores'
+1608553829675	Copy file
+1608553991113	Copy compilation unit

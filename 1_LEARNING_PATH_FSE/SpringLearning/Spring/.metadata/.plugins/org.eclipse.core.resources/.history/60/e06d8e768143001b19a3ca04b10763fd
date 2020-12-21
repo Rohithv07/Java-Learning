@@ -1,0 +1,6 @@
+package com.rohith.spring.springcore.list;
+
+public class Hospital {
+	private String name;
+	private List<String> departments;
+}

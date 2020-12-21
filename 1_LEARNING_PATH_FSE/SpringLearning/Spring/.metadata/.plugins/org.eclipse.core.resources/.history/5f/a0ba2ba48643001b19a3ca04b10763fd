@@ -1,0 +1,5 @@
+package com.rohith.spring.springcore.properties;
+
+public class CountriesAndLanguages {
+
+}

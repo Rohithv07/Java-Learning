@@ -1,0 +1,9 @@
+INDEX VERSION 1.131+/media/vazha/softwares/newEclipse/Spring/.metadata/.plugins/org.eclipse.jdt.core
+670029820.index
+186650422.index
+809514828.index
+381828479.index
+1163785659.index
+646308851.index
+2355094333.index
+2597393146.index

@@ -1,0 +1,9 @@
+package com.rohith.spring.springcore;
+
+public class Test {
+
+	public static void main(String[] args) {
+		ClasspathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("config.xml");
+	}
+
+}

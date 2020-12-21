@@ -1,0 +1,6 @@
+package com.rohith.spring.springcore.referencetypes;
+
+public class Student {
+	private Scores scores;
+
+}

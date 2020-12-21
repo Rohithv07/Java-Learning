@@ -1,0 +1,6 @@
+package com.rohith.spring.springcore.set;
+
+public class CarDealer {
+	private String name;
+	private Set<String> models;
+}
