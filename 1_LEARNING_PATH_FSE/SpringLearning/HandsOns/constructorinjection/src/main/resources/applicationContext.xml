@@ -1,0 +1,28 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p" 
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    
+<bean class="com.spring.app.Customer" name="custObj" id="custObj">
+    <property name="custId" value="123" />
+    <property name="custName" value="ABC" />
+    <property name="emailId" value="abc@gmail.com" />
+    <property name="contactNo" value="123456" />
+    </bean>
+
+	<bean class="com.spring.app.MemberShip"
+		name="membership">
+	    <constructor-arg value="123" type="int" />
+	    <constructor-arg value="A" type="String" />
+	    <constructor-arg value="2" type="int" />
+		<constructor-arg ref="custObj" type="Customer"/>	        
+	    
+	 </bean>
+  
+  
+</beans>
+
