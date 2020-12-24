@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<context:property-placeholder location="accounts.properties" />
+   <bean name = "bankAccount" id = "bank" class = "com.cts.EBanking.BankAccount" abstract = "true" />
+   <bean name = "smartBankAccount" id  = "smartBankAccount" class = "com.cts.EBanking.SmartBankAccount" parent = "bankAccount">
+       <constructor-arg value = "100" type="int" />
+       <constructor-arg value = "Joe" type="String" />
+       <constructor-arg value = "10000" type = "double" />
+       <constructor-arg>
+           <list>
+               <value>${current}</value>
+               <value>${recurring}</value>
+               <value>${fixed}</value>
+           </list>
+       </constructor-arg>
+   </bean>
+</beans>
