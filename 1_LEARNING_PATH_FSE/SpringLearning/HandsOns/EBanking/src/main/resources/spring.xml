@@ -23,3 +23,9 @@
        </constructor-arg>
    </bean>
 </beans>
+
+
+
+<!-- You can also use  PropertyPlaceholderConfigurer bean 
+	<bean id="propertyPlaceholderConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location" value="accounts.properties" />   instead of context-property-placeholder-->
