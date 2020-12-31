@@ -102,5 +102,29 @@ public class TodoBusinessImplMockTestBDD {
 		assertThat(stringArgumentCaptor.getAllValues().size(), is(2)); // use getAllValues() for capturing all values
 
 	}
+	
+	@Test
+	public void testRetrieveTodosNotRelatedToSpring_UsingBDD_argumentCatch() {
+		
+		// declare an argument captor
+		ArgumentCaptor<String> stringArgumentCaptor = ArgumentCaptor.forClass(String.class);
+		// define argument captor on specific method call
+		// capture the argument
+		// given
+		TodoService todoServiceMock = mock(TodoService.class);
+		List<String> todos = Arrays.asList("Learn Spring", "Spring mvc", "Learn to dance");
+		given(todoServiceMock.retrieveTodos("dummy")).willReturn(todos);
+		TodoBusinessImpl todoBusinessImpl = new TodoBusinessImpl(todoServiceMock);
+
+		// when
+		todoBusinessImpl.deleteTodosNotRelatedToSpring("dummy");
+
+		// then
+		then(todoServiceMock).should().deleteTodo(stringArgumentCaptor.capture()); // define captor
+		assertThat(stringArgumentCaptor.getValue(), is("Learn to dance"));
+		then(todoServiceMock).should(never()).deleteTodo("Spring mvc"); // never delete this
+		then(todoServiceMock).should(never()).deleteTodo("Learn Spring");
+
+	}
 
 }

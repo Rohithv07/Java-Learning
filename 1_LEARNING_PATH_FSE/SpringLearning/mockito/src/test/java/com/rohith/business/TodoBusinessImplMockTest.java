@@ -38,14 +38,5 @@ public class TodoBusinessImplMockTest {
 		List<String> filteredTodos = todoBusinessImpl.retrieveTodosRelatedToSpring("dummy");
 		assertEquals(0, filteredTodos.size());
 	}
-	
-
-	/*
-	 * @Test public void testRetrieveTodosRelatedToSpring_usingAStubCheckEquality()
-	 * { TodoService todoServiceStub = new TodoServiceStub(); TodoBusinessImpl
-	 * todoBusinessImpl = new TodoBusinessImpl(todoServiceStub); List<String>
-	 * filteredTodos = todoBusinessImpl.retrieveTodosRelatedToSpring("Dummy");
-	 * assertEquals("Learn Spring", filteredTodos.get(0)); }
-	 */
 
 }
