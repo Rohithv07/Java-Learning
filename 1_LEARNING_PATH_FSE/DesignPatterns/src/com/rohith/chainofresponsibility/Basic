@@ -1,0 +1,14 @@
+Handler:
+-------
+* defines an interface for handling requests.
+* Implements the successor link(Optionally)
+
+ConcreteHandler:
+----------------
+* Handles request its responsible for.
+* Can access its successor.
+* If the concrete handler can handle the request, it does so; otherwise forwards to the successor.
+
+Client:
+------
+Initiates the request to the concrete handler.
