@@ -1,0 +1,7 @@
+* Subject : which is used to register observers. Objest use this interface to register as observers and alos to remove themselved from being observers.
+
+* Observers : defines an updating interface for objects that should be notified of changes in a subject. All observers need to implement the Observer interface. This interface has a method update() whci gets called whne the subjects state changes.
+
+* ConcreteSubject : stores the state of interest to conreteobserver objects. It sends a notification to its observers when its state changes. A concrete subject always implements the subject interface. The notifiyObservers() method is used to uopdate all the current observers whenevr the state changes.
+
+* ConcreteObserver : maintains a reference to a concreteSubject object and implememts the Observer interface. Each observer registers with a concrete subject to receive updates.
