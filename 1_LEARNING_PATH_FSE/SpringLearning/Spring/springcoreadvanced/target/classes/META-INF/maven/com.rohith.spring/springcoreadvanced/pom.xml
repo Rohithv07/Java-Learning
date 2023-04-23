@@ -13,7 +13,7 @@
   <url>http://www.example.com</url>
 
   <properties>
-		<springframework.version>5.2.23.RELEASE</springframework.version>
+		<springframework.version>5.2.24.RELEASE</springframework.version>
 	</properties>
 
 	<dependencies>
